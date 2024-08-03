@@ -214,7 +214,7 @@ const StrengthLevel = () => {
 
   return (
     <Box sx={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
-      <Typography variant="body1" sx={{ color: '#dfdde5', }}>{bgColors[strength - 1]?.title || ''}</Typography>
+      <Typography variant="body2" sx={{ color: '#dfdde5', }}>{bgColors[strength - 1]?.title || ''}</Typography>
 
       <Box sx={{ display: 'flex', gap: '.2rem' }}>
         {[1, 2, 3, 4].map((item, id) => <Box key={nanoid()} sx={(id < strength) ? { backgroundColor: bgColors[strength - 1].color, ...styles } : { backgroundColor: 'transparent', ...styles }}></Box>)}
