@@ -163,7 +163,7 @@ function App() {
             <FLCComponent title="Включить Символы" checked={form.isSymbols} onChange={(e) => changeFieldForm('isSymbols', e.target.checked)} />
           </FormGroup>
 
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.5rem', backgroundColor: '#18171f', }}>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.2rem', backgroundColor: '#18171f', }}>
             <Typography variant="overline" sx={{ color: '#595861' }}>НАДЁЖНОСТЬ</Typography>
             <StrengthLevel />
           </Box>
