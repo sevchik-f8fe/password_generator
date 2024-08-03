@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'SCP';
+    src: url(./assets/SourceCodePro-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'SCP' !important;
+}
+
+body {
+    background-color: #101014;
+}
+
+.MuiFormControlLabel-label {
+    font-size: .8rem !important;
+    /* Измените размер шрифта здесь */
+}
