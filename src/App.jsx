@@ -163,7 +163,7 @@ function App() {
             <FLCComponent title="Включить Символы" checked={form.isSymbols} onChange={(e) => changeFieldForm('isSymbols', e.target.checked)} />
           </FormGroup>
 
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 1.2rem', backgroundColor: '#18171f', }}>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '.8rem 1rem', backgroundColor: '#18171f', }}>
             <Typography variant="overline" sx={{ color: '#595861' }}>НАДЁЖНОСТЬ</Typography>
             <StrengthLevel />
           </Box>
@@ -214,7 +214,7 @@ const StrengthLevel = () => {
 
   return (
     <Box sx={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
-      <Typography variant="body2" sx={{ color: '#dfdde5', }}>{bgColors[strength - 1]?.title || ''}</Typography>
+      <Typography variant="overline" sx={{ color: '#dfdde5', }}>{bgColors[strength - 1]?.title || ''}</Typography>
 
       <Box sx={{ display: 'flex', gap: '.2rem' }}>
         {[1, 2, 3, 4].map((item, id) => <Box key={nanoid()} sx={(id < strength) ? { backgroundColor: bgColors[strength - 1].color, ...styles } : { backgroundColor: 'transparent', ...styles }}></Box>)}
