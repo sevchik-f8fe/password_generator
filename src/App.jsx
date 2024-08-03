@@ -210,7 +210,7 @@ const StrengthLevel = () => {
     { color: '#f3cb6f', title: 'НОРМАЛЬНЫЙ' },
     { color: '#00FF7F', title: 'СЛОЖНЫЙ' },
   ];
-  const styles = { border: '2px solid #dfdde5', borderRadius: '.1rem', padding: '.5rem .2rem' };
+  const styles = { border: '1px solid #dfdde5', borderRadius: '.1rem', padding: '.4rem .2rem' };
 
   return (
     <Box sx={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
